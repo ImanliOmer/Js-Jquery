@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="/signin.css">
+    <link rel="stylesheet" href="/signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-start ">
+            <nav class="navbar navbar-light bg-light d-flex ">
+                <a class="navbar-brand" href="/index.html">Main</a>
+            </nav>
+            <nav class="navbar navbar-light bg-light d-flex ">
+                <a id="si" class="navbar-brand" style="cursor: pointer">Sign In</a>
+            </nav>
+            <nav class="navbar navbar-light bg-light d-flex ">
+                <a id="logOut" class="navbar-brand d-none" style="cursor: pointer">Log Out</a>
+            </nav>
+        </div>
+    </div>
+    <div id="signin-container" class="container d-none">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Sign In</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input id="userLogin" required type="text" class="form-control"
+                                placeholder="username or email">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input id="userPassword" required type="password" class="form-control"
+                                placeholder="password">
+                        </div>
+                        <div class="row align-items-center remember">
+                            <input id="rememberMe" type="checkbox">Remember Me
+                        </div>
+                        <div class="row align-items-center remember">
+                            <input id="autofil" type="checkbox">AutoFill Password
+                        </div>
+                        <div class="form-group">
+                            <a id="login" class="btn float-right">
+                                <span></span>
+                                <span></span>
+                                Login
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div id="idSi" class="d-flex justify-content-center links">
+                        Create account<a href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="signup-container" class="container login d-none">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Sign Up</h3>
+                </div>
+                <div class="card-body">
+                    <form id="form-signup">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input id="signUpName" required type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input id="signUpSurname" required type="text" class="form-control" placeholder="Surname">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input id="signUpUsername" required type="text" class="form-control" placeholder="Username">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-at"></i></span>
+                            </div>
+                            <input id="signUpEmail" type="email" required class="form-control" placeholder="Email">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input id="signUpPassword" type="password" required class="form-control"
+                                placeholder="password">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input id="signUpRePassword" type="password" required class="form-control"
+                                placeholder="re-password">
+                        </div>
+                        <div class="form-group">
+                            <button id="register" type="submit" class="btn float-right">
+                                <span></span>
+                                <span></span>
+                                Register
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/script.js"></script>
+</html>
